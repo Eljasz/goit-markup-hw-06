@@ -757,15 +757,17 @@ address {
   height: 86px;
   margin-left: 93px;
 }
-.title-footer-form {
+/* .title-footer-form {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-color);
-}
+} */
+
 .join-list-form {
+  align-items: flex-end;
   display: flex;
 }
 .join-item-form {
@@ -774,7 +776,15 @@ address {
 .join-item-form:first-child {
   margin-left: 0;
 }
+.form-footer label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
 .form-footer input {
+  margin-top: 20px;
   padding: 15px 0 15px 16px;
   min-width: 358px;
   height: 50px;
