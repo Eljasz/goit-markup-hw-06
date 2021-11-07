@@ -465,6 +465,58 @@
             <use href="./img/sprite.svg.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form-modal">
+          <h3 class="title-modal">Оставте свои данные, мы вам перезвоним</h3>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label for="name">Имя</label>
+              <input
+                type="text"
+                name="personal"
+                id="name"
+                class="modal-input"
+              />
+            </li>
+            <li class="modal-item">
+              <label for="tel">Телефон</label>
+              <input type="text" name="personal" id="tel" class="modal-input" />
+            </li>
+
+            <li class="modal-item">
+              <label for="mail">Почта</label>
+              <input
+                type="text"
+                name="personal"
+                id="mail"
+                class="modal-input"
+              />
+            </li>
+            <li class="modal-item">
+              <label for="feedback">Комментарий</label>
+              <textarea
+                name="personal "
+                id="feedback"
+                class="modal-textarea"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
+          <p class="agreement-modal">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              class="agreement-checkbox"
+              required
+            />
+            <label for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="modal-link">Условия договора</a></label
+            >
+          </p>
+
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
