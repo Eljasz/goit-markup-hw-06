@@ -964,12 +964,12 @@ address {
 }
 .modal-form-checkbox-label::before {
   content: "";
-  background-image: url(./img/checkbox1.svg);
+  background-image: url(../img/checkbox1.svg);
   width: 16px;
   height: 15px;
   cursor: pointer;
   margin-right: 7px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(./img/chekbox.svg);
+  background-image: url(../img/chekbox.svg);
 }
