@@ -469,31 +469,31 @@
           <h3 class="title-modal">Оставте свои данные, мы вам перезвоним</h3>
           <label class="textarea-label"
             >Имя
-            <div class="container-modal-form">
+            <span class="container-modal-form">
+              <input type="text" name="personal" class="modal-input" />
               <svg width="18px" height="18px" class="icon-modal-form">
                 <use href="./img/sprite.svg.svg#icon-name"></use>
               </svg>
-              <input type="text" name="personal" class="modal-input" />
-            </div>
+            </span>
           </label>
           <label class="textarea-label"
             >Телефон
-            <div class="container-modal-form">
+            <span class="container-modal-form">
+              <input type="text" name="personal" class="modal-input" />
               <svg width="18px" height="18px" class="icon-modal-form">
                 <use href="./img/sprite.svg.svg#icon-tel"></use>
               </svg>
-              <input type="text" name="personal" class="modal-input" />
-            </div>
+            </span>
           </label>
 
           <label class="textarea-label"
             >Почта
-            <div class="container-modal-form">
+            <span class="container-modal-form">
+              <input type="text" name="personal" class="modal-input" />
               <svg width="18px" height="18px" class="icon-modal-form">
                 <use href="./img/sprite.svg.svg#icon-mail"></use>
               </svg>
-              <input type="text" name="personal" class="modal-input" />
-            </div>
+            </span>
           </label>
 
           <label class="textarea-label"
@@ -504,20 +504,17 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <p class="agreement-modal">
-            <input
-              type="checkbox"
-              name="agreement"
-              id="agreement"
-              class="agreement-checkbox"
-              required
-            />
-            <label for="agreement"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="modal-link">Условия договора</a></label
-            >
-          </p>
 
+          <input
+            type="checkbox"
+            id="akcept-polisy"
+            required
+            class="modal-form-checkbox visually-hidden"
+          />
+          <label for="akcept-polisy" class="modal-form-checkbox-label"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a href="#" class="modal-link">Условия договора</a></label
+          >
           <button type="submit">Отправить</button>
         </form>
       </div>
