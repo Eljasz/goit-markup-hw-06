@@ -467,56 +467,39 @@
         </button>
         <form class="form-modal">
           <h3 class="title-modal">Оставте свои данные, мы вам перезвоним</h3>
-          <ul class="modal-list"></ulclass>>
-            <li class="modal-item">
-              <label for="name">Имя</label>
-              <div class="container-modal-form">
-                <svg width="18px" height="18px" class="icon-modal-form">
-                  <use href="/img/sprite.svg.svg#icon-name"></use>
-                </svg>
-                <input
-                  type="text"
-                  name="personal"
-                  id="name"
-                  class="modal-input"
-                />
-              </div>
-            </li>
-            <li class="modal-item">
-              <label for="tel">Телефон</label>
-              <div class="container-modal-form">
-                <svg width="18px" height="18px" class="icon-modal-form">
-                  <use href="/img/sprite.svg.svg#icon-tel"></use>
-                </svg>
-                <input
-                  type="text"
-                  name="personal"
-                  id="tel"
-                  class="modal-input"
-                />
-              </div>
-            </li>
+          <label class="textarea-label"
+            >Имя
+            <div class="container-modal-form">
+              <svg width="18px" height="18px" class="icon-modal-form">
+                <use href="/img/sprite.svg.svg#icon-name"></use>
+              </svg>
+              <input type="text" name="personal" class="modal-input" />
+            </div>
+          </label>
+          <label class="textarea-label"
+            >Телефон
+            <div class="container-modal-form">
+              <svg width="18px" height="18px" class="icon-modal-form">
+                <use href="/img/sprite.svg.svg#icon-tel"></use>
+              </svg>
+              <input type="text" name="personal" class="modal-input" />
+            </div>
+          </label>
 
-            <li class="modal-item">
-              <label for="mail">Почта</label>
-              <div class="container-modal-form">
-                <svg width="18px" height="18px" class="icon-modal-form">
-                  <use href="/img/sprite.svg.svg#icon-mail"></use>
-                </svg>
-                <input
-                  type="text"
-                  name="personal"
-                  id="mail"
-                  class="modal-input"
-                />
-              </div>
-            </li>
-          </ul>
-          <label for="feedback" class="textarea-label"
+          <label class="textarea-label"
+            >Почта
+            <div class="container-modal-form">
+              <svg width="18px" height="18px" class="icon-modal-form">
+                <use href="/img/sprite.svg.svg#icon-mail"></use>
+              </svg>
+              <input type="text" name="personal" class="modal-input" />
+            </div>
+          </label>
+
+          <label class="textarea-label"
             >Комментарий
             <textarea
               name="comment "
-              id="feedback"
               class="modal-textarea"
               placeholder="Введите текст"
             ></textarea>
