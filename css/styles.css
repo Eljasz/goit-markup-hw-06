@@ -951,6 +951,7 @@ address {
   height: 100%;
 }
 .icon-modal-form {
+  fill: red;
   transform: translateY(-50%);
   top: 50%;
   left: 12px;
