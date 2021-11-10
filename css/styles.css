@@ -512,10 +512,9 @@ address {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
-.join-first {
-  flex-grow: 1;
-}
+
 .footer .logo {
   display: flex;
   width: 145px;
