@@ -513,6 +513,9 @@ address {
   display: flex;
   align-items: baseline;
 }
+.join-first {
+  flex-grow: 1;
+}
 .footer .logo {
   display: flex;
   width: 145px;
@@ -570,22 +573,13 @@ address {
   fill: var(--background-color);
 }
 .form-footer {
+  align-items: flex-end;
+  display: flex;
   width: 570px;
   height: 86px;
   margin-left: 93px;
 }
-.list-form {
-  align-items: flex-end;
-  display: flex;
-}
-.item-form {
-  margin-left: 12px;
-}
-.item-form:first-child {
-  margin-left: 0;
-}
 .form-footer label {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -609,6 +603,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 .button-footer-form {
+  border: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -794,34 +789,28 @@ address {
 }
 .button-close-modal {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   position: absolute;
-  margin-top: 8px;
   color: #000;
-  margin-right: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--background-color);
+  cursor: pointer;
 }
 
 .modal-icon {
   padding: 6px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  border-radius: 50%;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: currentColor;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon:hover,
 .modal-icon:focus {
@@ -867,7 +856,6 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-top: 4px;
   width: 100%;
   height: 40px;
 }
@@ -876,9 +864,6 @@ address {
   border-color: var(--akcent-color);
 }
 
-.modal-item:not(:first-child) {
-  margin-top: 10px;
-}
 .modal-textarea {
   display: flex;
   margin-top: 4px;
@@ -904,10 +889,8 @@ address {
 
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-item {
-  width: 448px;
-}
-.textarea-label:not(:first-child) {
+
+.textarea-label:nth-child(n + 3) {
   margin-top: 10px;
 }
 
@@ -920,6 +903,7 @@ address {
 }
 
 .form-modal button {
+  border: transparent;
   padding: 10px 55px 10px 56px;
   font-weight: 700;
   font-size: 16px;
@@ -937,6 +921,8 @@ address {
   color: currentColor;
 }
 .container-modal-form {
+  margin-top: 4px;
+  display: block;
   position: relative;
   width: 100%;
   height: 100%;
